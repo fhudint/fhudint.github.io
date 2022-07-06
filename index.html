@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fhudint</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section>
+      <h1>Simple parallax Effect</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+        at. Ad fugiat dolore, iste necessitatibus blanditiis recusandae
+        doloribus mollitia deleniti earum tempore illo facilis quae maiores,
+        asperiores repellat? Ipsam, quas.
+      </p>
+      <div class="parallax__bg">
+        <img src="/image/parallax/image__1.jpg" alt="" class="image__1" />
+      </div>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+        at. Ad fugiat dolore, iste necessitatibus blanditiis recusandae
+        doloribus mollitia deleniti earum tempore illo facilis quae maiores,
+        asperiores repellat? Ipsam, quas.
+      </p>
+      <div class="parallax__bg">
+        <img src="/image/parallax/image__2.jpg" alt="" class="image__2" />
+      </div>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+        at. Ad fugiat dolore, iste necessitatibus blanditiis recusandae
+        doloribus mollitia deleniti earum tempore illo facilis quae maiores,
+        asperiores repellat? Ipsam, quas.
+      </p>
+      <div class="parallax__bg">
+        <img src="/image/parallax/image__3.jpg" alt="" class="image__3" />
+      </div>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+        at. Ad fugiat dolore, iste necessitatibus blanditiis recusandae
+        doloribus mollitia deleniti earum tempore illo facilis quae maiores,
+        asperiores repellat? Ipsam, quas.
+      </p>
+      <div class="parallax__bg">
+        <img src="/image/parallax/image__4.jpg" alt="" class="image__4" />
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+      var image__1 = document.getElementsByClassName("image__1");
+      new simpleParallax(image__1, {
+        orientation: "left",
+      });
+      var image__2 = document.getElementsByClassName("image__2");
+      new simpleParallax(image__1, {
+        orientation: "left",
+      });
+      var image__3 = document.getElementsByClassName("image__3");
+      new simpleParallax(image__3, {
+        orientation: "left",
+      });
+      var image__4 = document.getElementsByClassName("image__4");
+      new simpleParallax(image__4, {
+        orientation: "left",
+      });
+    </script>
+  </body>
+</html>
