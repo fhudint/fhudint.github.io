@@ -5,73 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fhudint</title>
-    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <section>
-      <h1>Simple parallax Effect</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-        at. Ad fugiat dolore, iste necessitatibus blanditiis recusandae
-        doloribus mollitia deleniti earum tempore illo facilis quae maiores,
-        asperiores repellat? Ipsam, quas.
-      </p>
-      <div class="parallax__bg">
-        <img src="/image/parallax/image__1.jpg" alt="" class="image__1" />
+    <main>
+      <div class="big__wrapper">
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="/images/logo.png" alt="logo" />
+              <h3>fhudint</h3>
+            </div>
+            <div class="links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li>
+                  <button class="toggle__button">
+                    <!--<img src="/images/moon.svg" alt="dark" />-->
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="main__area">
+          <div class="container">
+            <div class="left__side">
+              <div class="big__title">
+                <h1>Welcome to</h1>
+                <h1>my Github Pages</h1>
+              </div>
+              <p class="text">
+                Welcome to GitHub—where millions of developers work together on
+                software. Ready to get started? Let’s learn how this all works
+                by building and publishing your first GitHub Pages website!
+              </p>
+              <div class="cta">
+                <a class="button" href="https://github.com/fhudint">Explore</a>
+              </div>
+            </div>
+            <div class="right__side">
+              <div class="vanta__cloud" id="vanta__cloud">
+                <!--<img src="/images/parallax/image__1.jpg" alt="" />-->
+              </div>
+              <p>vanta__cloud</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-        at. Ad fugiat dolore, iste necessitatibus blanditiis recusandae
-        doloribus mollitia deleniti earum tempore illo facilis quae maiores,
-        asperiores repellat? Ipsam, quas.
-      </p>
-      <div class="parallax__bg">
-        <img src="/image/parallax/image__2.jpg" alt="" class="image__2" />
-      </div>
-    </section>
-    <section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-        at. Ad fugiat dolore, iste necessitatibus blanditiis recusandae
-        doloribus mollitia deleniti earum tempore illo facilis quae maiores,
-        asperiores repellat? Ipsam, quas.
-      </p>
-      <div class="parallax__bg">
-        <img src="/image/parallax/image__3.jpg" alt="" class="image__3" />
-      </div>
-    </section>
-    <section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-        at. Ad fugiat dolore, iste necessitatibus blanditiis recusandae
-        doloribus mollitia deleniti earum tempore illo facilis quae maiores,
-        asperiores repellat? Ipsam, quas.
-      </p>
-      <div class="parallax__bg">
-        <img src="/image/parallax/image__4.jpg" alt="" class="image__4" />
-      </div>
-    </section>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
     <script>
-      var image__1 = document.getElementsByClassName("image__1");
-      var image__2 = document.getElementsByClassName("image__2");
-      var image__3 = document.getElementsByClassName("image__3");
-      var image__4 = document.getElementsByClassName("image__4");
-
-      new simpleParallax(image__1, {
-        orientation: "left",
-      });
-      new simpleParallax(image__2, {
-        orientation: "right",
-      });
-      new simpleParallax(image__3, {
-        orientation: "up",
-      });
-      new simpleParallax(image__4, {
-        orientation: "down",
+      VANTA.CLOUDS2({
+        el: "#vanta__cloud",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        backgroundColor: 0xf1f8fc,
+        skyColor: 0x919191,
+        cloudColor: 0x64bcf4,
+        lightColor: 0xf1f8fc,
+        speed: 0.5,
+        texturePath: "./gallery/noise.png",
       });
     </script>
   </body>
